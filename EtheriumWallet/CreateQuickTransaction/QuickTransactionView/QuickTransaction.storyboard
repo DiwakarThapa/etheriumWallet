@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Quick Transaction View Controller-->
+        <scene sceneID="FyO-aH-qa6">
+            <objects>
+                <viewController storyboardIdentifier="QuickTransactionViewController" id="of9-z1-Vx4" customClass="QuickTransactionViewController" customModule="EtheriumWallet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2ZB-9i-AVr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KV2-3H-Ihk">
+                                <rect key="frame" x="87" y="183.5" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="ZeM-sK-nOt"/>
+                                    <constraint firstAttribute="width" constant="200" id="s9b-Pz-kx8"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCAN QR CODE TO COMPLETE THE TRANSACTION" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhc-Us-jqk">
+                                <rect key="frame" x="20" y="433.5" width="335" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.14901960780000001" green="0.47843137250000001" blue="0.086274509799999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fhc-Us-jqk" firstAttribute="leading" secondItem="GH7-Z6-2W6" secondAttribute="leading" constant="20" id="Aik-Qf-PcA"/>
+                            <constraint firstItem="KV2-3H-Ihk" firstAttribute="centerX" secondItem="2ZB-9i-AVr" secondAttribute="centerX" id="GxR-AS-Hxe"/>
+                            <constraint firstItem="fhc-Us-jqk" firstAttribute="top" secondItem="KV2-3H-Ihk" secondAttribute="bottom" constant="50" id="Kla-4Y-v8Q"/>
+                            <constraint firstItem="KV2-3H-Ihk" firstAttribute="centerY" secondItem="2ZB-9i-AVr" secondAttribute="centerY" constant="-50" id="YCv-Sz-8AN"/>
+                            <constraint firstItem="GH7-Z6-2W6" firstAttribute="trailing" secondItem="fhc-Us-jqk" secondAttribute="trailing" constant="20" id="mgh-l1-CyR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GH7-Z6-2W6"/>
+                    </view>
+                    <connections>
+                        <outlet property="transactionQRView" destination="KV2-3H-Ihk" id="OgM-D0-3mJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I1e-Mn-wK3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="178" y="161"/>
+        </scene>
+    </scenes>
+</document>

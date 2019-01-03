@@ -1,0 +1,6 @@
+framework module Pods_EtheriumWalletTests {
+  umbrella header "Pods-EtheriumWalletTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

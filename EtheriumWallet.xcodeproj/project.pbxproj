@@ -1,0 +1,939 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A038F7820A012B600DCB1C2 /* keythereum.html in Resources */ = {isa = PBXBuildFile; fileRef = 1A038F7220A012B600DCB1C2 /* keythereum.html */; };
+		1A038F7920A012B600DCB1C2 /* keythereum.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 1A038F7320A012B600DCB1C2 /* keythereum.min.js */; };
+		1A038F7A20A012B600DCB1C2 /* KeyGenerator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A038F7520A012B600DCB1C2 /* KeyGenerator.storyboard */; };
+		1A038F7B20A012B600DCB1C2 /* KeyGeneratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A038F7720A012B600DCB1C2 /* KeyGeneratorViewController.swift */; };
+		1A038F7E20A01C9500DCB1C2 /* Transaction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A038F7D20A01C9500DCB1C2 /* Transaction.storyboard */; };
+		1A038F8020A01CAD00DCB1C2 /* TransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A038F7F20A01CAD00DCB1C2 /* TransactionViewController.swift */; };
+		1A6A685520A8908F000811BC /* AddCryptoToken.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A6A685420A8908E000811BC /* AddCryptoToken.storyboard */; };
+		1A6A685720A890AA000811BC /* AddCryptoTokenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A685620A890AA000811BC /* AddCryptoTokenViewController.swift */; };
+		1A6A685920A891E1000811BC /* TokenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A685820A891E1000811BC /* TokenTableViewCell.swift */; };
+		1A6A685C20A8924A000811BC /* CurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A685B20A8924A000811BC /* CurrencyModel.swift */; };
+		1A6A685F20A94311000811BC /* AddTokenPopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A6A685E20A94311000811BC /* AddTokenPopUp.xib */; };
+		1A6A686120A944E4000811BC /* AddTokenPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A686020A944E4000811BC /* AddTokenPopUp.swift */; };
+		1A6A686420A94FD0000811BC /* AccountDetailsPopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A6A686320A94FD0000811BC /* AccountDetailsPopUp.xib */; };
+		1A6A686620A94FE0000811BC /* AccountDetailsPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A686520A94FE0000811BC /* AccountDetailsPopUp.swift */; };
+		1AD7D345202D5D3E00D5A871 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD7D344202D5D3E00D5A871 /* AppDelegate.swift */; };
+		1AD7D347202D5D3E00D5A871 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD7D346202D5D3E00D5A871 /* ViewController.swift */; };
+		1AD7D34A202D5D3E00D5A871 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AD7D348202D5D3E00D5A871 /* Main.storyboard */; };
+		1AD7D34C202D5D3E00D5A871 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AD7D34B202D5D3E00D5A871 /* Assets.xcassets */; };
+		1AD7D34F202D5D3E00D5A871 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AD7D34D202D5D3E00D5A871 /* LaunchScreen.storyboard */; };
+		1AD7D35A202D5D3E00D5A871 /* EtheriumWalletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD7D359202D5D3E00D5A871 /* EtheriumWalletTests.swift */; };
+		1AD7D365202D5D3E00D5A871 /* EtheriumWalletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD7D364202D5D3E00D5A871 /* EtheriumWalletUITests.swift */; };
+		1AD7D375202DB23D00D5A871 /* AccountsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD7D374202DB23D00D5A871 /* AccountsCell.swift */; };
+		1AD7D377202DB39400D5A871 /* NewAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD7D376202DB39400D5A871 /* NewAccountViewController.swift */; };
+		1AD7D379202DC09C00D5A871 /* AccountDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD7D378202DC09C00D5A871 /* AccountDetailsViewController.swift */; };
+		1AD7D37B202DC4DC00D5A871 /* CheckPinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD7D37A202DC4DC00D5A871 /* CheckPinViewController.swift */; };
+		1AE16E7620A2B5B70070EBA0 /* ColorHexExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE16E7520A2B5B70070EBA0 /* ColorHexExtension.swift */; };
+		1AE16E7820A2C50F0070EBA0 /* TransactionDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE16E7720A2C50F0070EBA0 /* TransactionDetailsViewController.swift */; };
+		1AE16E7A20A2D8860070EBA0 /* WebLinksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE16E7920A2D8850070EBA0 /* WebLinksViewController.swift */; };
+		1AF8833B20A967340099FA95 /* TokenDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF8833A20A967340099FA95 /* TokenDetailViewController.swift */; };
+		1AF8833E20A9974E0099FA95 /* QuickTransactionPopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AF8833D20A9974D0099FA95 /* QuickTransactionPopUp.xib */; };
+		1AF8834020A997610099FA95 /* QuickTransactionPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF8833F20A997610099FA95 /* QuickTransactionPopUp.swift */; };
+		1AF8834320A99A2F0099FA95 /* QuickTransaction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AF8834220A99A2F0099FA95 /* QuickTransaction.storyboard */; };
+		1AF8834520A99A420099FA95 /* QuickTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF8834420A99A420099FA95 /* QuickTransactionViewController.swift */; };
+		1AF8834820A99BE80099FA95 /* PayNow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AF8834720A99BE80099FA95 /* PayNow.storyboard */; };
+		1AF8834A20A99BF00099FA95 /* PayNowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF8834920A99BF00099FA95 /* PayNowViewController.swift */; };
+		6BB383073F8C041D90DE8883 /* Pods_EtheriumWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0160287FB256C8854278D3B6 /* Pods_EtheriumWallet.framework */; };
+		92F2FB65ED885960D44F10C1 /* Pods_EtheriumWalletUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94B52C64D93C64C02CA52C16 /* Pods_EtheriumWalletUITests.framework */; };
+		DA7115CE9293B0F06B3BF5E9 /* Pods_EtheriumWalletTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945D577C2F4768A4AE54FD67 /* Pods_EtheriumWalletTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1AD7D356202D5D3E00D5A871 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AD7D339202D5D3E00D5A871 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AD7D340202D5D3E00D5A871;
+			remoteInfo = EtheriumWallet;
+		};
+		1AD7D361202D5D3E00D5A871 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AD7D339202D5D3E00D5A871 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AD7D340202D5D3E00D5A871;
+			remoteInfo = EtheriumWallet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0160287FB256C8854278D3B6 /* Pods_EtheriumWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EtheriumWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0539F60BABF0BB3AFB5C6E3C /* Pods-EtheriumWalletTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EtheriumWalletTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EtheriumWalletTests/Pods-EtheriumWalletTests.release.xcconfig"; sourceTree = "<group>"; };
+		05C3F58F6116CD61AEE514CB /* Pods-EtheriumWallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EtheriumWallet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EtheriumWallet/Pods-EtheriumWallet.debug.xcconfig"; sourceTree = "<group>"; };
+		179B50DC197C2D766228D818 /* Pods-EtheriumWalletUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EtheriumWalletUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EtheriumWalletUITests/Pods-EtheriumWalletUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1A038F7220A012B600DCB1C2 /* keythereum.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = keythereum.html; sourceTree = "<group>"; };
+		1A038F7320A012B600DCB1C2 /* keythereum.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = keythereum.min.js; sourceTree = "<group>"; };
+		1A038F7620A012B600DCB1C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/KeyGenerator.storyboard; sourceTree = "<group>"; };
+		1A038F7720A012B600DCB1C2 /* KeyGeneratorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyGeneratorViewController.swift; sourceTree = "<group>"; };
+		1A038F7D20A01C9500DCB1C2 /* Transaction.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Transaction.storyboard; path = emplate/Transaction.storyboard; sourceTree = "<group>"; };
+		1A038F7F20A01CAD00DCB1C2 /* TransactionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransactionViewController.swift; path = erSwift/TransactionViewController.swift; sourceTree = "<group>"; };
+		1A6A685420A8908E000811BC /* AddCryptoToken.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddCryptoToken.storyboard; sourceTree = "<group>"; };
+		1A6A685620A890AA000811BC /* AddCryptoTokenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCryptoTokenViewController.swift; sourceTree = "<group>"; };
+		1A6A685820A891E1000811BC /* TokenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenTableViewCell.swift; sourceTree = "<group>"; };
+		1A6A685B20A8924A000811BC /* CurrencyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyModel.swift; sourceTree = "<group>"; };
+		1A6A685E20A94311000811BC /* AddTokenPopUp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddTokenPopUp.xib; sourceTree = "<group>"; };
+		1A6A686020A944E4000811BC /* AddTokenPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTokenPopUp.swift; sourceTree = "<group>"; };
+		1A6A686320A94FD0000811BC /* AccountDetailsPopUp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountDetailsPopUp.xib; sourceTree = "<group>"; };
+		1A6A686520A94FE0000811BC /* AccountDetailsPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailsPopUp.swift; sourceTree = "<group>"; };
+		1AD7D341202D5D3E00D5A871 /* EtheriumWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EtheriumWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AD7D344202D5D3E00D5A871 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1AD7D346202D5D3E00D5A871 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1AD7D349202D5D3E00D5A871 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1AD7D34B202D5D3E00D5A871 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1AD7D34E202D5D3E00D5A871 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1AD7D350202D5D3E00D5A871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AD7D355202D5D3E00D5A871 /* EtheriumWalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EtheriumWalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AD7D359202D5D3E00D5A871 /* EtheriumWalletTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtheriumWalletTests.swift; sourceTree = "<group>"; };
+		1AD7D35B202D5D3E00D5A871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AD7D360202D5D3E00D5A871 /* EtheriumWalletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EtheriumWalletUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AD7D364202D5D3E00D5A871 /* EtheriumWalletUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtheriumWalletUITests.swift; sourceTree = "<group>"; };
+		1AD7D366202D5D3E00D5A871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AD7D374202DB23D00D5A871 /* AccountsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsCell.swift; sourceTree = "<group>"; };
+		1AD7D376202DB39400D5A871 /* NewAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountViewController.swift; sourceTree = "<group>"; };
+		1AD7D378202DC09C00D5A871 /* AccountDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailsViewController.swift; sourceTree = "<group>"; };
+		1AD7D37A202DC4DC00D5A871 /* CheckPinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckPinViewController.swift; sourceTree = "<group>"; };
+		1AE16E7520A2B5B70070EBA0 /* ColorHexExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorHexExtension.swift; path = emplate/ColorHexExtension.swift; sourceTree = "<group>"; };
+		1AE16E7720A2C50F0070EBA0 /* TransactionDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransactionDetailsViewController.swift; path = erSwift/TransactionDetailsViewController.swift; sourceTree = "<group>"; };
+		1AE16E7920A2D8850070EBA0 /* WebLinksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebLinksViewController.swift; sourceTree = "<group>"; };
+		1AF8833A20A967340099FA95 /* TokenDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenDetailViewController.swift; sourceTree = "<group>"; };
+		1AF8833D20A9974D0099FA95 /* QuickTransactionPopUp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuickTransactionPopUp.xib; sourceTree = "<group>"; };
+		1AF8833F20A997610099FA95 /* QuickTransactionPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickTransactionPopUp.swift; sourceTree = "<group>"; };
+		1AF8834220A99A2F0099FA95 /* QuickTransaction.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QuickTransaction.storyboard; sourceTree = "<group>"; };
+		1AF8834420A99A420099FA95 /* QuickTransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickTransactionViewController.swift; sourceTree = "<group>"; };
+		1AF8834720A99BE80099FA95 /* PayNow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PayNow.storyboard; sourceTree = "<group>"; };
+		1AF8834920A99BF00099FA95 /* PayNowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayNowViewController.swift; sourceTree = "<group>"; };
+		2271F0A521DC9824009CD0C5 /* secp256k1_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = secp256k1_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2271F0A721DC982F009CD0C5 /* secp256k1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = secp256k1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2271F0A921DC9853009CD0C5 /* libsodium.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = libsodium.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E03C98BF9D5A56E1441B974 /* Pods-EtheriumWalletUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EtheriumWalletUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EtheriumWalletUITests/Pods-EtheriumWalletUITests.release.xcconfig"; sourceTree = "<group>"; };
+		350DE5722F332FDA7242C386 /* Pods-EtheriumWallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EtheriumWallet.release.xcconfig"; path = "Pods/Target Support Files/Pods-EtheriumWallet/Pods-EtheriumWallet.release.xcconfig"; sourceTree = "<group>"; };
+		40B2BF3BD7585C7390DA9AF4 /* Pods-EtheriumWalletTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EtheriumWalletTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EtheriumWalletTests/Pods-EtheriumWalletTests.debug.xcconfig"; sourceTree = "<group>"; };
+		945D577C2F4768A4AE54FD67 /* Pods_EtheriumWalletTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EtheriumWalletTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94B52C64D93C64C02CA52C16 /* Pods_EtheriumWalletUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EtheriumWalletUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1AD7D33E202D5D3E00D5A871 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BB383073F8C041D90DE8883 /* Pods_EtheriumWallet.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AD7D352202D5D3E00D5A871 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA7115CE9293B0F06B3BF5E9 /* Pods_EtheriumWalletTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AD7D35D202D5D3E00D5A871 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92F2FB65ED885960D44F10C1 /* Pods_EtheriumWalletUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		017A086E7DE5C632A16AF1B8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				05C3F58F6116CD61AEE514CB /* Pods-EtheriumWallet.debug.xcconfig */,
+				350DE5722F332FDA7242C386 /* Pods-EtheriumWallet.release.xcconfig */,
+				40B2BF3BD7585C7390DA9AF4 /* Pods-EtheriumWalletTests.debug.xcconfig */,
+				0539F60BABF0BB3AFB5C6E3C /* Pods-EtheriumWalletTests.release.xcconfig */,
+				179B50DC197C2D766228D818 /* Pods-EtheriumWalletUITests.debug.xcconfig */,
+				2E03C98BF9D5A56E1441B974 /* Pods-EtheriumWalletUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1A038F7120A012B600DCB1C2 /* keythereum */ = {
+			isa = PBXGroup;
+			children = (
+				1AE16E7920A2D8850070EBA0 /* WebLinksViewController.swift */,
+				1A038F7220A012B600DCB1C2 /* keythereum.html */,
+				1A038F7320A012B600DCB1C2 /* keythereum.min.js */,
+			);
+			path = keythereum;
+			sourceTree = "<group>";
+		};
+		1A038F7420A012B600DCB1C2 /* KeythereumSwift */ = {
+			isa = PBXGroup;
+			children = (
+				1A038F7520A012B600DCB1C2 /* KeyGenerator.storyboard */,
+				1A038F7720A012B600DCB1C2 /* KeyGeneratorViewController.swift */,
+			);
+			path = KeythereumSwift;
+			sourceTree = "<group>";
+		};
+		1A038F7C20A01C7800DCB1C2 /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				1AE16E7720A2C50F0070EBA0 /* TransactionDetailsViewController.swift */,
+				1A038F7F20A01CAD00DCB1C2 /* TransactionViewController.swift */,
+				1A038F7D20A01C9500DCB1C2 /* Transaction.storyboard */,
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
+		1A6A685320A8906D000811BC /* CryptoConfig */ = {
+			isa = PBXGroup;
+			children = (
+				1A6A685D20A942FD000811BC /* CryptoTokenPopUp */,
+				1A6A685420A8908E000811BC /* AddCryptoToken.storyboard */,
+				1A6A685620A890AA000811BC /* AddCryptoTokenViewController.swift */,
+				1A6A685820A891E1000811BC /* TokenTableViewCell.swift */,
+				1AF8833A20A967340099FA95 /* TokenDetailViewController.swift */,
+			);
+			path = CryptoConfig;
+			sourceTree = "<group>";
+		};
+		1A6A685A20A89239000811BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1A6A685B20A8924A000811BC /* CurrencyModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1A6A685D20A942FD000811BC /* CryptoTokenPopUp */ = {
+			isa = PBXGroup;
+			children = (
+				1A6A685E20A94311000811BC /* AddTokenPopUp.xib */,
+				1A6A686020A944E4000811BC /* AddTokenPopUp.swift */,
+			);
+			path = CryptoTokenPopUp;
+			sourceTree = "<group>";
+		};
+		1A6A686220A94FBD000811BC /* AccountDetailsPopUp */ = {
+			isa = PBXGroup;
+			children = (
+				1A6A686320A94FD0000811BC /* AccountDetailsPopUp.xib */,
+				1A6A686520A94FE0000811BC /* AccountDetailsPopUp.swift */,
+			);
+			path = AccountDetailsPopUp;
+			sourceTree = "<group>";
+		};
+		1AD7D338202D5D3E00D5A871 = {
+			isa = PBXGroup;
+			children = (
+				1AD7D343202D5D3E00D5A871 /* EtheriumWallet */,
+				1AD7D358202D5D3E00D5A871 /* EtheriumWalletTests */,
+				1AD7D363202D5D3E00D5A871 /* EtheriumWalletUITests */,
+				1AD7D342202D5D3E00D5A871 /* Products */,
+				017A086E7DE5C632A16AF1B8 /* Pods */,
+				D5C846FDFAC907CEFBBF0D7D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1AD7D342202D5D3E00D5A871 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AD7D341202D5D3E00D5A871 /* EtheriumWallet.app */,
+				1AD7D355202D5D3E00D5A871 /* EtheriumWalletTests.xctest */,
+				1AD7D360202D5D3E00D5A871 /* EtheriumWalletUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AD7D343202D5D3E00D5A871 /* EtheriumWallet */ = {
+			isa = PBXGroup;
+			children = (
+				1AF8834620A99BDC0099FA95 /* PayNow */,
+				1AF8833C20A997350099FA95 /* CreateQuickTransaction */,
+				1A6A686220A94FBD000811BC /* AccountDetailsPopUp */,
+				1A6A685A20A89239000811BC /* Model */,
+				1A6A685320A8906D000811BC /* CryptoConfig */,
+				1AE16E7520A2B5B70070EBA0 /* ColorHexExtension.swift */,
+				1A038F7C20A01C7800DCB1C2 /* Transaction */,
+				1A038F7120A012B600DCB1C2 /* keythereum */,
+				1A038F7420A012B600DCB1C2 /* KeythereumSwift */,
+				1AD7D344202D5D3E00D5A871 /* AppDelegate.swift */,
+				1AD7D346202D5D3E00D5A871 /* ViewController.swift */,
+				1AD7D348202D5D3E00D5A871 /* Main.storyboard */,
+				1AD7D34B202D5D3E00D5A871 /* Assets.xcassets */,
+				1AD7D34D202D5D3E00D5A871 /* LaunchScreen.storyboard */,
+				1AD7D350202D5D3E00D5A871 /* Info.plist */,
+				1AD7D374202DB23D00D5A871 /* AccountsCell.swift */,
+				1AD7D376202DB39400D5A871 /* NewAccountViewController.swift */,
+				1AD7D378202DC09C00D5A871 /* AccountDetailsViewController.swift */,
+				1AD7D37A202DC4DC00D5A871 /* CheckPinViewController.swift */,
+			);
+			path = EtheriumWallet;
+			sourceTree = "<group>";
+		};
+		1AD7D358202D5D3E00D5A871 /* EtheriumWalletTests */ = {
+			isa = PBXGroup;
+			children = (
+				1AD7D359202D5D3E00D5A871 /* EtheriumWalletTests.swift */,
+				1AD7D35B202D5D3E00D5A871 /* Info.plist */,
+			);
+			path = EtheriumWalletTests;
+			sourceTree = "<group>";
+		};
+		1AD7D363202D5D3E00D5A871 /* EtheriumWalletUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1AD7D364202D5D3E00D5A871 /* EtheriumWalletUITests.swift */,
+				1AD7D366202D5D3E00D5A871 /* Info.plist */,
+			);
+			path = EtheriumWalletUITests;
+			sourceTree = "<group>";
+		};
+		1AF8833C20A997350099FA95 /* CreateQuickTransaction */ = {
+			isa = PBXGroup;
+			children = (
+				1AF8834120A99A1D0099FA95 /* QuickTransactionView */,
+				1AF8833D20A9974D0099FA95 /* QuickTransactionPopUp.xib */,
+				1AF8833F20A997610099FA95 /* QuickTransactionPopUp.swift */,
+			);
+			path = CreateQuickTransaction;
+			sourceTree = "<group>";
+		};
+		1AF8834120A99A1D0099FA95 /* QuickTransactionView */ = {
+			isa = PBXGroup;
+			children = (
+				1AF8834220A99A2F0099FA95 /* QuickTransaction.storyboard */,
+				1AF8834420A99A420099FA95 /* QuickTransactionViewController.swift */,
+			);
+			path = QuickTransactionView;
+			sourceTree = "<group>";
+		};
+		1AF8834620A99BDC0099FA95 /* PayNow */ = {
+			isa = PBXGroup;
+			children = (
+				1AF8834720A99BE80099FA95 /* PayNow.storyboard */,
+				1AF8834920A99BF00099FA95 /* PayNowViewController.swift */,
+			);
+			path = PayNow;
+			sourceTree = "<group>";
+		};
+		D5C846FDFAC907CEFBBF0D7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2271F0A921DC9853009CD0C5 /* libsodium.framework */,
+				2271F0A721DC982F009CD0C5 /* secp256k1.framework */,
+				2271F0A521DC9824009CD0C5 /* secp256k1_ios.framework */,
+				0160287FB256C8854278D3B6 /* Pods_EtheriumWallet.framework */,
+				945D577C2F4768A4AE54FD67 /* Pods_EtheriumWalletTests.framework */,
+				94B52C64D93C64C02CA52C16 /* Pods_EtheriumWalletUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1AD7D340202D5D3E00D5A871 /* EtheriumWallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AD7D369202D5D3E00D5A871 /* Build configuration list for PBXNativeTarget "EtheriumWallet" */;
+			buildPhases = (
+				9DB2B6A0BCD4A79EB6E3E8DC /* [CP] Check Pods Manifest.lock */,
+				1AD7D33D202D5D3E00D5A871 /* Sources */,
+				1AD7D33E202D5D3E00D5A871 /* Frameworks */,
+				1AD7D33F202D5D3E00D5A871 /* Resources */,
+				4AFFF623676EA4C0B81AC4B3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EtheriumWallet;
+			productName = EtheriumWallet;
+			productReference = 1AD7D341202D5D3E00D5A871 /* EtheriumWallet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1AD7D354202D5D3E00D5A871 /* EtheriumWalletTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AD7D36C202D5D3E00D5A871 /* Build configuration list for PBXNativeTarget "EtheriumWalletTests" */;
+			buildPhases = (
+				95A2911F3D8BA899304733E2 /* [CP] Check Pods Manifest.lock */,
+				1AD7D351202D5D3E00D5A871 /* Sources */,
+				1AD7D352202D5D3E00D5A871 /* Frameworks */,
+				1AD7D353202D5D3E00D5A871 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1AD7D357202D5D3E00D5A871 /* PBXTargetDependency */,
+			);
+			name = EtheriumWalletTests;
+			productName = EtheriumWalletTests;
+			productReference = 1AD7D355202D5D3E00D5A871 /* EtheriumWalletTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1AD7D35F202D5D3E00D5A871 /* EtheriumWalletUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AD7D36F202D5D3E00D5A871 /* Build configuration list for PBXNativeTarget "EtheriumWalletUITests" */;
+			buildPhases = (
+				651DB68BADA1A27FFCF5CE8A /* [CP] Check Pods Manifest.lock */,
+				1AD7D35C202D5D3E00D5A871 /* Sources */,
+				1AD7D35D202D5D3E00D5A871 /* Frameworks */,
+				1AD7D35E202D5D3E00D5A871 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1AD7D362202D5D3E00D5A871 /* PBXTargetDependency */,
+			);
+			name = EtheriumWalletUITests;
+			productName = EtheriumWalletUITests;
+			productReference = 1AD7D360202D5D3E00D5A871 /* EtheriumWalletUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1AD7D339202D5D3E00D5A871 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Lizan Pradhanang";
+				TargetAttributes = {
+					1AD7D340202D5D3E00D5A871 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					1AD7D354202D5D3E00D5A871 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1AD7D340202D5D3E00D5A871;
+					};
+					1AD7D35F202D5D3E00D5A871 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1AD7D340202D5D3E00D5A871;
+					};
+				};
+			};
+			buildConfigurationList = 1AD7D33C202D5D3E00D5A871 /* Build configuration list for PBXProject "EtheriumWallet" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1AD7D338202D5D3E00D5A871;
+			productRefGroup = 1AD7D342202D5D3E00D5A871 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1AD7D340202D5D3E00D5A871 /* EtheriumWallet */,
+				1AD7D354202D5D3E00D5A871 /* EtheriumWalletTests */,
+				1AD7D35F202D5D3E00D5A871 /* EtheriumWalletUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1AD7D33F202D5D3E00D5A871 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AD7D34F202D5D3E00D5A871 /* LaunchScreen.storyboard in Resources */,
+				1AF8834320A99A2F0099FA95 /* QuickTransaction.storyboard in Resources */,
+				1A6A685F20A94311000811BC /* AddTokenPopUp.xib in Resources */,
+				1A038F7820A012B600DCB1C2 /* keythereum.html in Resources */,
+				1AF8834820A99BE80099FA95 /* PayNow.storyboard in Resources */,
+				1A038F7E20A01C9500DCB1C2 /* Transaction.storyboard in Resources */,
+				1A6A685520A8908F000811BC /* AddCryptoToken.storyboard in Resources */,
+				1AD7D34C202D5D3E00D5A871 /* Assets.xcassets in Resources */,
+				1AD7D34A202D5D3E00D5A871 /* Main.storyboard in Resources */,
+				1A038F7A20A012B600DCB1C2 /* KeyGenerator.storyboard in Resources */,
+				1AF8833E20A9974E0099FA95 /* QuickTransactionPopUp.xib in Resources */,
+				1A038F7920A012B600DCB1C2 /* keythereum.min.js in Resources */,
+				1A6A686420A94FD0000811BC /* AccountDetailsPopUp.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AD7D353202D5D3E00D5A871 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AD7D35E202D5D3E00D5A871 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4AFFF623676EA4C0B81AC4B3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EtheriumWallet/Pods-EtheriumWallet-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-Synchronous/Alamofire_Synchronous.framework",
+				"${BUILT_PRODUCTS_DIR}/BigInt/BigInt.framework",
+				"${BUILT_PRODUCTS_DIR}/BigInt.swift/BigInt.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework",
+				"${BUILT_PRODUCTS_DIR}/Floaty/Floaty.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/PinCodeTextField/PinCodeTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/QRCode/QRCode.framework",
+				"${BUILT_PRODUCTS_DIR}/QRCodeReader.swift/QRCodeReader.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SipHash/SipHash.framework",
+				"${BUILT_PRODUCTS_DIR}/Web3/Web3.framework",
+				"${BUILT_PRODUCTS_DIR}/Whisper/Whisper.framework",
+				"${BUILT_PRODUCTS_DIR}/libsodium/libsodium.framework",
+				"${BUILT_PRODUCTS_DIR}/secp256k1.swift/secp256k1.framework",
+				"${BUILT_PRODUCTS_DIR}/secp256k1_ios/secp256k1_ios.framework",
+				"${BUILT_PRODUCTS_DIR}/web3swift/web3swift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire_Synchronous.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BigInt.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DropDown.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Floaty.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PinCodeTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QRCode.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QRCodeReader.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SipHash.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Web3.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Whisper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libsodium.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/secp256k1.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/secp256k1_ios.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/web3swift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EtheriumWallet/Pods-EtheriumWallet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		651DB68BADA1A27FFCF5CE8A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EtheriumWalletUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95A2911F3D8BA899304733E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EtheriumWalletTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DB2B6A0BCD4A79EB6E3E8DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EtheriumWallet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1AD7D33D202D5D3E00D5A871 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A6A685C20A8924A000811BC /* CurrencyModel.swift in Sources */,
+				1AE16E7820A2C50F0070EBA0 /* TransactionDetailsViewController.swift in Sources */,
+				1AD7D347202D5D3E00D5A871 /* ViewController.swift in Sources */,
+				1AD7D375202DB23D00D5A871 /* AccountsCell.swift in Sources */,
+				1A6A685920A891E1000811BC /* TokenTableViewCell.swift in Sources */,
+				1A038F7B20A012B600DCB1C2 /* KeyGeneratorViewController.swift in Sources */,
+				1AF8834A20A99BF00099FA95 /* PayNowViewController.swift in Sources */,
+				1A6A686120A944E4000811BC /* AddTokenPopUp.swift in Sources */,
+				1AD7D345202D5D3E00D5A871 /* AppDelegate.swift in Sources */,
+				1AD7D379202DC09C00D5A871 /* AccountDetailsViewController.swift in Sources */,
+				1AD7D377202DB39400D5A871 /* NewAccountViewController.swift in Sources */,
+				1AF8833B20A967340099FA95 /* TokenDetailViewController.swift in Sources */,
+				1AD7D37B202DC4DC00D5A871 /* CheckPinViewController.swift in Sources */,
+				1A6A686620A94FE0000811BC /* AccountDetailsPopUp.swift in Sources */,
+				1A038F8020A01CAD00DCB1C2 /* TransactionViewController.swift in Sources */,
+				1AE16E7620A2B5B70070EBA0 /* ColorHexExtension.swift in Sources */,
+				1AF8834520A99A420099FA95 /* QuickTransactionViewController.swift in Sources */,
+				1AE16E7A20A2D8860070EBA0 /* WebLinksViewController.swift in Sources */,
+				1A6A685720A890AA000811BC /* AddCryptoTokenViewController.swift in Sources */,
+				1AF8834020A997610099FA95 /* QuickTransactionPopUp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AD7D351202D5D3E00D5A871 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AD7D35A202D5D3E00D5A871 /* EtheriumWalletTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AD7D35C202D5D3E00D5A871 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AD7D365202D5D3E00D5A871 /* EtheriumWalletUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1AD7D357202D5D3E00D5A871 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AD7D340202D5D3E00D5A871 /* EtheriumWallet */;
+			targetProxy = 1AD7D356202D5D3E00D5A871 /* PBXContainerItemProxy */;
+		};
+		1AD7D362202D5D3E00D5A871 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AD7D340202D5D3E00D5A871 /* EtheriumWallet */;
+			targetProxy = 1AD7D361202D5D3E00D5A871 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1A038F7520A012B600DCB1C2 /* KeyGenerator.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A038F7620A012B600DCB1C2 /* Base */,
+			);
+			name = KeyGenerator.storyboard;
+			sourceTree = "<group>";
+		};
+		1AD7D348202D5D3E00D5A871 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AD7D349202D5D3E00D5A871 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1AD7D34D202D5D3E00D5A871 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AD7D34E202D5D3E00D5A871 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1AD7D367202D5D3E00D5A871 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1AD7D368202D5D3E00D5A871 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1AD7D36A202D5D3E00D5A871 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05C3F58F6116CD61AEE514CB /* Pods-EtheriumWallet.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WG8T9CMZ5J;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = EtheriumWallet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = etherWallet.EtheriumWallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1AD7D36B202D5D3E00D5A871 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 350DE5722F332FDA7242C386 /* Pods-EtheriumWallet.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WG8T9CMZ5J;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = EtheriumWallet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = etherWallet.EtheriumWallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1AD7D36D202D5D3E00D5A871 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40B2BF3BD7585C7390DA9AF4 /* Pods-EtheriumWalletTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 974PYRN6CZ;
+				INFOPLIST_FILE = EtheriumWalletTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = etherWallet.EtheriumWalletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EtheriumWallet.app/EtheriumWallet";
+			};
+			name = Debug;
+		};
+		1AD7D36E202D5D3E00D5A871 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0539F60BABF0BB3AFB5C6E3C /* Pods-EtheriumWalletTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 974PYRN6CZ;
+				INFOPLIST_FILE = EtheriumWalletTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = etherWallet.EtheriumWalletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EtheriumWallet.app/EtheriumWallet";
+			};
+			name = Release;
+		};
+		1AD7D370202D5D3E00D5A871 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 179B50DC197C2D766228D818 /* Pods-EtheriumWalletUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 974PYRN6CZ;
+				INFOPLIST_FILE = EtheriumWalletUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = etherWallet.EtheriumWalletUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EtheriumWallet;
+			};
+			name = Debug;
+		};
+		1AD7D371202D5D3E00D5A871 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E03C98BF9D5A56E1441B974 /* Pods-EtheriumWalletUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 974PYRN6CZ;
+				INFOPLIST_FILE = EtheriumWalletUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = etherWallet.EtheriumWalletUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EtheriumWallet;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1AD7D33C202D5D3E00D5A871 /* Build configuration list for PBXProject "EtheriumWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AD7D367202D5D3E00D5A871 /* Debug */,
+				1AD7D368202D5D3E00D5A871 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AD7D369202D5D3E00D5A871 /* Build configuration list for PBXNativeTarget "EtheriumWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AD7D36A202D5D3E00D5A871 /* Debug */,
+				1AD7D36B202D5D3E00D5A871 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AD7D36C202D5D3E00D5A871 /* Build configuration list for PBXNativeTarget "EtheriumWalletTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AD7D36D202D5D3E00D5A871 /* Debug */,
+				1AD7D36E202D5D3E00D5A871 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AD7D36F202D5D3E00D5A871 /* Build configuration list for PBXNativeTarget "EtheriumWalletUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AD7D370202D5D3E00D5A871 /* Debug */,
+				1AD7D371202D5D3E00D5A871 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1AD7D339202D5D3E00D5A871 /* Project object */;
+}

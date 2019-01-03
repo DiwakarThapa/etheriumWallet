@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pay Now View Controller-->
+        <scene sceneID="Vaw-SZ-r24">
+            <objects>
+                <viewController storyboardIdentifier="PayNowViewController" id="bYQ-Fm-Qqd" customClass="PayNowViewController" customModule="EtheriumWallet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fOh-nq-3Kq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GVr-7i-LOc">
+                                <rect key="frame" x="87" y="183.5" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="rdm-8n-1DR"/>
+                                    <constraint firstAttribute="width" constant="200" id="v3s-ar-dQs"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XPD-qt-KBg">
+                                <rect key="frame" x="112" y="403.5" width="150" height="40"/>
+                                <color key="backgroundColor" red="0.033575993620000001" green="0.62119494819999999" blue="0.1042766326" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="XrC-r2-8qS"/>
+                                    <constraint firstAttribute="width" constant="150" id="k7h-oJ-XLd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="View Transaction">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="viewTransactionAction:" destination="bYQ-Fm-Qqd" eventType="touchUpInside" id="0cY-ER-tYz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XPD-qt-KBg" firstAttribute="centerX" secondItem="fOh-nq-3Kq" secondAttribute="centerX" id="Efd-Ov-NvY"/>
+                            <constraint firstItem="XPD-qt-KBg" firstAttribute="top" secondItem="GVr-7i-LOc" secondAttribute="bottom" constant="20" id="aA6-YL-RzD"/>
+                            <constraint firstItem="GVr-7i-LOc" firstAttribute="centerX" secondItem="fOh-nq-3Kq" secondAttribute="centerX" id="lzc-2x-qHe"/>
+                            <constraint firstItem="GVr-7i-LOc" firstAttribute="centerY" secondItem="fOh-nq-3Kq" secondAttribute="centerY" constant="-50" id="sph-cE-7LY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XJX-Ws-Hi2"/>
+                    </view>
+                    <connections>
+                        <outlet property="transactionHexQRView" destination="GVr-7i-LOc" id="Eiv-6x-v3m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SLf-XX-jAi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="351" y="406"/>
+        </scene>
+    </scenes>
+</document>
